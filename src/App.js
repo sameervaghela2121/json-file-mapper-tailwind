@@ -42,8 +42,8 @@ function App() {
   return (
     <div className="w-full flex flex-col items-center">
       {!jsonData && <div className="w-full flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-violet-600 to-indigo-600">
-        <h1 className="text-3xl font-semibold mb-6">ITR1 COMPUTATION Generator</h1>
-        <h1 className="text-3xl font-semibold mb-6">Mukesh Purbia</h1>
+        <h1 className="text-3xl font-semibold mb-6 text-white">ITR1 COMPUTATION Generator</h1>
+        <h1 className="text-3xl font-semibold mb-6 text-white">Mukesh Purbia</h1>
         <div className="border-2 border-dashed rounded p-4 cursor-pointer flex flex-col items-center">
           <input
             type="file"
@@ -52,19 +52,19 @@ function App() {
           />
           <div className="text-center">
 
-            <p className="text-sm text-gray-600">
+            <p className="text-sm font-bold text-gray-100">
               <label htmlFor="file-upload" className="cursor-pointer">
                 Upload a JSON file
               </label>
             </p>
           </div>
         </div>
-        <p className="text-sm font-bold text-red-900 m-5">
+        <p className="text-sm font-bold text-red-300 m-5">
           <label className="cursor-pointer">
             Please only upload ITR1 JSON Files
           </label>
         </p>
-        <p className="text-sm font-bold text-red-900 m-5">
+        <p className="text-sm font-bold text-red-300 m-5">
           <label className="cursor-pointer">
             After seeing Computation Print it using shortcut (Ctrl + P)
           </label>
