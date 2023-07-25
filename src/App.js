@@ -3,7 +3,6 @@ import Computation from "./Computation";
 
 function App() {
   const [jsonData, setJsonData] = useState(null);
-  console.log("jsonData", jsonData)
 
   const handleFileChange = useCallback(
     (event) => {
@@ -41,15 +40,16 @@ function App() {
   };
 
   return (
-    <div className="w-full p-[150px] flex flex-col items-center">
-      {/* {jsonData && <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-        <h1 className="text-3xl font-semibold mb-6">JSON File Mapper</h1>
+    <div className="w-full flex flex-col items-center">
+      {!jsonData && <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <h1 className="text-3xl font-semibold mb-6">ITR1 COMPUTATION Generator</h1>
+        <h1 className="text-3xl font-semibold mb-6">Mukesh Purbia</h1>
         <div className="border-2 border-dashed rounded p-4 cursor-pointer">
           <input
             type="file"
             accept=".json"
             onChange={handleFileChange}
-            className="hidden"
+            className=""
           />
           <div className="text-center">
 
@@ -60,10 +60,10 @@ function App() {
             </p>
           </div>
         </div>
-        <div className="mt-8">{renderKeys()}</div>
-      </div>} */}
+        {/* <div className="mt-8">{renderKeys()}</div> */}
+      </div>}
       {
-        <Computation jsonData={jsonData} />
+        jsonData && <Computation jsonData={jsonData} />
       }
     </div>
   );
