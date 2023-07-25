@@ -69,6 +69,11 @@ function App() {
             After seeing Computation Print it using shortcut (Ctrl + P)
           </label>
         </p>
+        <p className="text-sm font-bold text-red-300 m-5">
+          <label className="cursor-pointer">
+            All Rights Reserved By Mukesh Purbia
+          </label>
+        </p>
         {/* <div className="mt-8">{renderKeys()}</div> */}
       </div>}
       {
